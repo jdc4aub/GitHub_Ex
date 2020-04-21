@@ -1,0 +1,27 @@
+Data
+
+The data will be FourSquare data making use of the categories section, ratings, and radius 1700 (meters) - about 1 mile - as walking distance
+The categories will allow a diversity rating to be determined. The more unique categories, the higher a rating the location will recieve. This data will be normalized and put on a scale of 10
+The ratings as determined by the users (on a scale of 10) will be used directly from the foursquare data
+A radius of 1700m was chosen to ensure a large dataset was available for each city. Additionally, the standard target audience for luxury apartments in a downtown area tend to be a 
+younger, more social crowd willing to walk further distances to reach a venue
+
+
+
+
+Example Data Usage:
+
+Index        Name        Categories       Rating
+  0       Ex place 1       Coffee           8.2
+  1       Ex place 2      American          7.4
+  2       Ex place 3       Mexican          9.1
+  3       Ex place 4       Coffee           9.0
+  
+  Example Location Score : (3 / Max Unique Categories in example cities)*10 + Mean(8.2, 7.4, 9.1, 9.0) = X/20
+  
+  
+Example Location    :  X/20
+Example Location 2  :  Y/20
+Example Location 3  :  Z/20 
+
+Developers should explore options of building in Location 2 because it rates highest in terms of diversity and appraisal of venues. 

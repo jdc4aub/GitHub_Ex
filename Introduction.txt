@@ -1,0 +1,4 @@
+Introduction
+
+Determine which downtown area has the highest rated and most diverse set of venues within "walking distance" of each other.
+By having this data, a developer would know where best to build luxury apartments and condominiums for maximum target consumer appeal.
